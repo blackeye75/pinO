@@ -1,0 +1,13 @@
+<% include ./partials/header.ejs%>
+    <div class=" w-full min-h-screen bg-zinc-800 px-[5vw] py-5">
+        <h1 class="text-white text-xl ">Create a new Post</h1>
+        <hr class="opacity-10 mt-3">
+        <form action="/createpost" method="post" enctype="multipart/form-data">
+            <input class=" text-white font-medium rounded-lg block w-40  py-3" type="file" name="postimage" id="" placeholder="" >
+            <input class="block w-[39vmax] px-2 py-3 mt-2 border-2 rounded-md" type="text" name="tittle" id="" placeholder="Tittle" >
+            <textarea class="block w-[39vmax] px-2 py-3 mt-2 h-60 border-2 rounded-md" type="text" name="description" id="" placeholder="Description" ></textarea>
+            <input class="block w-[39vmax] px-2 py-3 mt-2 border-2 bg-red-700 rounded-md" type="submit" value="Create Post">
+        </form>
+    </div>
+
+    <% include ./partials/footer.ejs%>
